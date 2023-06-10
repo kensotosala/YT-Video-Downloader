@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #ff0000;
+  --secondary-color: #ff6347;
+  --accent-color: #ffa500;
+  --neutral-color: #333333;
+  --background-color: #ffffff;
+  --primary-font: "Roboto", Arial, sans-serif;
+  --secondary-font: "Lato", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-brand-logo {
+  height: 50px;
+}
+
+h1 {
+  font-family: var(--primary-font);
+}
+
+h2 {
+  font-family: var(--secondary-font);
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+.navbar {
+  font-family: var(--secondary-font);
+  background: var(--primary-color);
+}
+
+.navbar-nav {
+  margin-left: 60rem;
+}
+
+.nav-brand-logo {
+  height: 50px;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: var(--background-color);
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--neutral-color);
+}
+
+.btn {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
+.btn:hover {
+  color: var(--background-color);
+  background: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles applied when the screen width is 768 pixels or less */
+  .navbar-nav {
+    background-color: var(--secondary-color); /* Red */
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+}
