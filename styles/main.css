@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 :root {
   --primary-color: #ff0000;
   --secondary-color: #ff6347;
@@ -9,12 +12,6 @@
   --secondary-font: "Lato", Arial, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 h1 {
   font-family: var(--primary-font);
 }
@@ -24,7 +21,7 @@ h2 {
 }
 
 p {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
 }
 
 .button {
@@ -34,38 +31,33 @@ p {
   cursor: pointer;
 }
 
-.btn:hover {
+.button:hover {
   background: var(--secondary-color);
+}
+
+body {
+  font-family: var(--primary-font);
 }
 
 /* Navbar */
 .navbar {
-  font-family: var(--primary-font);
-  padding: 10px;
   background: var(--primary-color);
-  height: 80px;
-}
-
-.navbar-brand {
-  margin-right: 45rem;
 }
 
 .navbar-brand img {
-  margin-right: 10px;
-  width: 100%;
+  margin-left: 10rem;
 }
 
-.navbar-nav .nav-item {
-  margin-right: 10px;
+.navbar-brand img {
+  height: 40px;
 }
 
-.navbar-nav .nav-link {
-  color: #ffffff;
-  text-decoration: none;
+.navbar-nav {
+  margin-left: 50rem;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #cccccc;
+.navbar-nav a {
+  color: var(--background-color);
 }
 
 /* Footer */
@@ -73,7 +65,7 @@ footer {
   background-color: var(--primary-color);
   padding: 20px;
   text-align: center;
-  margin-top: 40rem; /* Ajusta el margen superior según sea necesario */
+  margin-top: 10rem; /* Ajusta el margen superior según sea necesario */
 }
 
 .footer-content {
@@ -109,9 +101,6 @@ footer {
   text-decoration: underline;
 }
 
-@media (max-width: 767px) {
-  .navbar-nav .nav-item {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+.footer-content p {
+  color: black;
 }

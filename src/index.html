@@ -20,40 +20,35 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="/assets/brand-logo.png"
-              alt="Logo"
-              width="50"
-              height="50"
-            />
-          </a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="/assets/brand-logo.png" alt="logo"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">Link</a>
               </li>
             </ul>
           </div>
@@ -62,17 +57,72 @@
     </header>
     <main>
       <section class="content">
-        <div class="dw-container">
-          <h1>Welcome to the Video Downloader!</h1>
-          <p>Enter the URL of the YouTube video you want to download:</p>
-          <form class="download-form">
-            <input
-              class="input-download"
-              type="text"
-              placeholder="Enter video URL"
+        <div
+          class="container download-container d-flex align-items-center justify-content-center"
+        >
+          <div class="text-center">
+            <h1>Welcome to the Video Downloader!</h1>
+            <p>Enter the URL of the YouTube video you want to download:</p>
+            <form class="download-form">
+              <input
+                class="input-download"
+                type="text"
+                placeholder="Enter video URL"
+              />
+              <button class="button" type="submit">Download</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="card-layout">
+        <div class="card-group">
+          <!-- Card 1 -->
+          <div class="card mx-5">
+            <img
+              src="convenient-image.jpg"
+              class="card-img-top"
+              alt="Convenient Video Downloads"
             />
-            <button class="button" type="submit">Download</button>
-          </form>
+            <div class="card-body">
+              <h5 class="card-title">Convenient Video Downloads</h5>
+              <p class="card-text">
+                Download videos from YouTube with just a few clicks. Enjoy
+                offline viewing at your convenience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <img
+              src="high-quality-image.jpg"
+              class="card-img-top"
+              alt="High-Quality Downloads"
+            />
+            <div class="card-body">
+              <h5 class="card-title">High-Quality Downloads</h5>
+              <p class="card-text">
+                Get high-quality video downloads with various resolution
+                options, ensuring the best viewing experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card mx-5">
+            <img
+              src="fast-reliable-image.jpg"
+              class="card-img-top"
+              alt="Fast and Reliable"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fast and Reliable</h5>
+              <p class="card-text">
+                Experience fast and reliable downloads with DownTube. No more
+                waiting for buffering videos.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
