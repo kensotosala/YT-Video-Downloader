@@ -27,20 +27,23 @@ p {
   font-family: var(--primary-font);
 }
 
-.btn {
+.button {
   background: var(--primary-color);
   color: var(--background-color);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
-  color: var(--background-color);
   background: var(--secondary-color);
 }
 
 /* Navbar */
 .navbar {
-  font-family: "Arial", sans-serif;
+  font-family: var(--primary-font);
   padding: 10px;
+  background: var(--primary-color);
+  height: 80px;
 }
 
 .navbar-brand {
@@ -76,6 +79,10 @@ footer {
 .footer-content {
   color: var(--footer-content);
   font-size: 14px;
+}
+
+.footer-content p {
+  margin-top: 10px;
 }
 
 .footer-content ul {
