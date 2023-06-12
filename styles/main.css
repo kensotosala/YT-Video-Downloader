@@ -4,6 +4,7 @@
   --accent-color: #ffa500;
   --neutral-color: #333333;
   --background-color: #ffffff;
+  --footer-content: #777777;
   --primary-font: "Roboto", Arial, sans-serif;
   --secondary-font: "Lato", Arial, sans-serif;
 }
@@ -11,10 +12,7 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-.nav-brand-logo {
-  height: 50px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -29,29 +27,6 @@ p {
   font-family: var(--primary-font);
 }
 
-.navbar {
-  font-family: var(--secondary-font);
-  background: var(--primary-color);
-}
-
-.navbar-nav {
-  margin-left: 60rem;
-}
-
-.nav-brand-logo {
-  height: 50px;
-  margin-left: 1rem;
-}
-
-.nav-link {
-  color: var(--background-color);
-  margin-left: 1rem;
-}
-
-.nav-link:hover {
-  color: var(--neutral-color);
-}
-
 .btn {
   background: var(--primary-color);
   color: var(--background-color);
@@ -62,15 +37,74 @@ p {
   background: var(--secondary-color);
 }
 
-@media screen and (max-width: 768px) {
-  /* Styles applied when the screen width is 768 pixels or less */
-  .navbar-nav {
-    background-color: var(--secondary-color); /* Red */
-    margin-left: 0;
-    text-align: center;
-  }
+/* Navbar */
+.navbar {
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+}
 
-  .nav-link {
-    width: 100%;
+.navbar-brand {
+  margin-right: 45rem;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cccccc;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40rem; /* Ajusta el margen superior según sea necesario */
+}
+
+.footer-content {
+  color: var(--footer-content);
+  font-size: 14px;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-content li:last-child {
+  margin-right: 0;
+}
+
+.footer-content a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
