@@ -9,6 +9,24 @@
   width: 60rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 100%;
+}
+
+.input-download {
+  padding: 13.5px 70px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.arrow-icon::before {
+  content: "\2192";
+  font-size: 20px;
+}
+
+.btn-start {
+  border: none;
+  padding: 12px;
+  border-radius: 3px;
 }
 
 .card-group {
@@ -17,4 +35,12 @@
 
 .card {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  padding: 0 4rem;
+  margin: -7rem 100px;
+}
+
+.card-img-top {
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
 }
