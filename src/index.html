@@ -51,7 +51,7 @@
               <li class="nav-item">
                 <div class="dropdown">
                   <button
-                    class="btn btn-secondary dropdown-toggle"
+                    class="btn dropdown-toggle"
                     type="button"
                     id="triggerId"
                     data-bs-toggle="dropdown"
@@ -60,7 +60,10 @@
                   >
                     Languaje
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                  <div
+                    class="dropdown-menu cs-dropdown-menu"
+                    aria-labelledby="triggerId"
+                  >
                     <a class="dropdown-item" href="#">English</a>
                     <a class="dropdown-item" href="#">Español</a>
                     <a class="dropdown-item" href="#">Portuguese</a>
@@ -73,8 +76,9 @@
       </nav>
     </header>
     <main>
-      <div class="container form-container mt-4">
-        <div class="card">
+      <!-- Download Form -->
+      <div class="container mt-4">
+        <div class="card form-container">
           <div class="card-body custom-card-body">
             <h4 class="card-title text-center mt-5">
               Descarga tu video de YouTube
@@ -82,7 +86,7 @@
             <p class="card-text text-center">
               Download YouTube videos in MP3, MP4, 3GP,... and many more formats
             </p>
-            <div class="mb-4 mx-4">
+            <div class="mb-4 custom-form-control">
               <input
                 type="text"
                 class="form-control"
@@ -93,11 +97,28 @@
               />
             </div>
             <div class="container text-center">
-              <button type="submit" class="btn download-btn">Submit</button>
+              <button type="submit" class="btn download-btn">Descargar</button>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- SEO Content -->
+      <section>
+        <div class="container mt-5 text-center">
+          <h2>DownTube.com - YouTube Video Downloader</h2>
+          <p>
+            With DownTube, you can download any YouTube video in high-definition
+            quality, with just a few clicks. It supports all video and audio
+            formats, including MP4, M4V, 3GP, WMV, FLV, MO, MP3, and WEBM. You
+            can also download videos from other websites, such as Facebook,
+            Twitter, and Instagram. DownTube is completely free to use, and
+            there are no hidden fees or restrictions. You can download as many
+            videos as you want, whenever you want.
+          </p>
+        </div>
+        <div class="container"><hr class="border-dashed" /></div>
+      </section>
     </main>
     <footer></footer>
     <script

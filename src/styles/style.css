@@ -23,8 +23,15 @@ nav {
   background: #fff;
 }
 
-.form-container {
-  width: 600px;
+.dropdown-toggle {
+  background: #c70039;
+  border: none;
+  color: #fff;
+}
+
+.dropdown-toggle:hover:focus {
+  color: #fff;
+  background: #ff6969;
 }
 
 .card {
@@ -46,4 +53,38 @@ nav {
   background-color: #ff6969;
   border-color: #c70039;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    margin: 0 80px;
+  }
+  .custom-form-control {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    margin: 0 150px;
+  }
+
+  .custom-form-control {
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form-container {
+    margin: 0 300px;
+  }
+  .custom-form-control {
+    margin: 0 80px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .form-container {
+    margin: 0 300px;
+  }
 }
