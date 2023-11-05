@@ -55,6 +55,45 @@ nav {
   color: #fff;
 }
 
+/* Steps to download */
+.dw_steps-list li {
+  list-style: number;
+}
+
+/* Features Section */
+
+.step-image {
+  width: 50px;
+  margin: 10px 0;
+}
+
+/* Footer */
+
+footer {
+  background: #c70039;
+}
+
+.footer-container {
+  color: #141e46;
+  padding: 10px 0;
+}
+
+.footer-container p {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-container li {
+  list-style: none;
+}
+
+.list-group li:hover {
+  color: #fff;
+}
+
+/* Custom Displays 📺  */
+
 @media (min-width: 768px) {
   .form-container {
     margin: 0 80px;
@@ -71,6 +110,10 @@ nav {
 
   .custom-form-control {
     margin: 0 60px;
+  }
+
+  .step_list-container ul {
+    margin: 0px 100px;
   }
 }
 
